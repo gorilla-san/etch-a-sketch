@@ -10,6 +10,7 @@ html {
     align-content: center;
     height: 100%;
 
+
 }
 
 body {
@@ -53,8 +54,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    flex-wrap: wrap;
-    flex-shrink: auto;
 }
 
 .leftSidebar {
