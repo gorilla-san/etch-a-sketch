@@ -1,0 +1,41 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+
+}
+
+body {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: auto;
+}
+
+.canvas {
+    width: 1000px;
+    height: 600px;
+}
+
+#canvas {
+
+    border-style: solid;
+    border-color: gray;
+    border-width:2px;
+}
+
+header {
+    height: 100px;
+}
+footer {
+    height: 100px;
+}
