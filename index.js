@@ -80,7 +80,7 @@ titleLoad()
 const saveButton = document.getElementById("download")
 
 function clicked () {
-        let canvasUrl = canvas.toDataURL("image/jpeg", 0.5);
+        let canvasUrl = canvas.toDataURL("image/jpeg", 1);
         console.log(canvasUrl);
         const createEl = document.createElement('a');
         createEl.href = canvasUrl;
