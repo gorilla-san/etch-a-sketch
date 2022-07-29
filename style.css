@@ -147,9 +147,8 @@ li {
 
 footer button {
     padding: 10px;
-    font-weight: 700;
     font-size: 20px;
-    background-color: white;
+    background-color:rgba(255, 240, 240, 0.336);
 }
 
 footer {
@@ -176,4 +175,10 @@ footer span {
 
 .reset span {
     color: black;
+}
+
+footer button:hover {
+    background-color: white;
+    font-weight: 700;
+
 }
