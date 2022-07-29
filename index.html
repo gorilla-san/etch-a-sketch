@@ -5,24 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="app.js" defer></script>
+    <script type ="module" src="index.js" defer></script>
+    <script type="module" src="keybindings.js" defer></script>
+
     <title>Etch-a-sketch</title>
 </head>
+
 <body>
     <header>
 
     </header>
+
     <div class="main">
-        <div class="leftSidebar"></div>
+        <div class="leftSidebar">
+            <h1>Choose the color using your keyboard</h1>
+            <ul class="colors">
+                <li><p>Black</p><span id="black">B</span></li>
+                <li><p>Red</p><span id="red">Q</span></li>
+                <li><p>Red Violet</p><span id="redv">W</span></li>
+                <li><p>Violet</p><span id="violet">E</span></li>
+                <li><p>Blue Violet</p><span id="bluev">R</span></li>
+                <li><p>Blue</p><span id="blue">A</span></li>
+                <li><p>Blue Green</p><span id="blueg">S</span></li>
+                <li><p>Green</p><span id="green">D</span></li>
+                <li><p>Yellow Green</p><span id="ygreen">F</span></li>
+                <li><p>Yellow</p><span id="yellow">Z</span></li>
+                <li><p>Yellow Orange</p><span id="yellowo">X</span></li>
+                <li><p>Orange</p><span id="orange">C</span></li>
+                <li><p>Red Orange</p><span id="rorange">V</span></li>
+            </ul>
+        </div>
         <div class="canvas">
             <canvas id="canvas">
             </canvas>
         </div>
-        <div class="rightSidebar"></div>
+        <div class="rightSidebar">
+            <h1>Change size of the brush with numbers on your keyboard</h1>
+            <p>Smallest brush size is <span>1</span></p>
+            <p>...while the largest is <span>0</span></p>
+            <ul class="sizes">
+                <li></li>
+            </ul>
+        </div>
     </div>
 
     <footer>
 
-    </footer>     
+    </footer> 
+   
 </body>
+ 
 </html>

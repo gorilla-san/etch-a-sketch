@@ -1,7 +1,7 @@
 * {
     margin: none;
     padding: none;
-    box-sizing: border-box;
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
 }
 html {
     display: flex;
@@ -18,24 +18,129 @@ body {
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    height: auto;
+    height: 100%;
+    background-color: rgba(255, 240, 240, 0.336);
 }
 
 .canvas {
     width: 1000px;
     height: 600px;
+
 }
 
-#canvas {
-
-    border-style: solid;
-    border-color: gray;
-    border-width:2px;
+.canvas {
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.623);
+    box-sizing: border-box;
 }
 
 header {
     height: 100px;
+    display: flex;
+    align-items: center;
 }
 footer {
     height: 100px;
+}
+
+.title {
+    font-size: 60px;
+    color: rgb(58, 58, 58);
+}
+
+.main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-shrink: auto;
+}
+
+.leftSidebar {
+    width: 300px;
+}
+
+.rightSidebar {
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 20px;
+
+}
+
+.colors span {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.colors p {
+    margin: 0;
+    padding: 0;
+}
+
+.leftSidebar h1 {
+    font-size: 20px;
+}
+
+.leftSidebar span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#black {background-color: black; color: white;}
+#red {background-color: #FF0000; color: white;}
+#redv {background-color:#A9144A; color: white;}
+#violet {background-color: #8700B2; color: white;}
+#bluev {background-color: #3D00A7; color: white;}
+#blue {background-color: #0000FF; color: white;}
+#blueg {background-color: #0090D1; color: white;}
+#green {background-color: #388E27; color: white;}
+#ygreen {background-color: #D0EC00; color: white;}
+#yellow {background-color: #FFFF00; color: black;}
+#yellowo {background-color: #FCBD00; color: white;}
+#orange {background-color: #FD9A00; color: white;}
+#rorange {background-color: #FF6600; color: white;}
+
+
+
+.rightSidebar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.rightSidebar h1 {
+    text-align: right;
+    font-size: 20px;
+}
+
+.rightSidebar span {
+    background-color: rgb(255, 255, 217);
+    border-style: solid;
+    padding: 5px;
+    font-weight: 700;
 }
